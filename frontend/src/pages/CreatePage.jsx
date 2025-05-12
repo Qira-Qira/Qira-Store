@@ -40,14 +40,14 @@ const CreatePage = () => {
         duration: 5000,
       });
     }
-    setNewProduct({name: "", price: "", image: ""});
+    setNewProduct({ name: "", price: "", image: "" });
   };
 
   return (
     <Container maxW={"container.sm"}>
       <VStack spacing={8}>
         <Heading as={"h1"} size={"2xl"} textAlign={"center"} mb={8}>
-          Create New Product
+          Buat Produk Baru
         </Heading>
 
         <Box
@@ -59,7 +59,7 @@ const CreatePage = () => {
         >
           <VStack spacing={4}>
             <Input
-              placeholder="Product Name"
+              placeholder="Nama Produk"
               name="name"
               value={newProduct.name}
               onChange={(e) =>
@@ -68,7 +68,7 @@ const CreatePage = () => {
             />
 
             <Input
-              placeholder="Price"
+              placeholder="Harga"
               name="price"
               type="number"
               value={newProduct.price}
@@ -78,7 +78,7 @@ const CreatePage = () => {
             />
 
             <Input
-              placeholder="Image URL"
+              placeholder="Link Gambar"
               name="image"
               value={newProduct.image}
               onChange={(e) =>
@@ -87,7 +87,7 @@ const CreatePage = () => {
             />
 
             <Button colorScheme="blue" onClick={handleAddProduct} w={"full"}>
-              Add Product
+              Tambahkan Produk
             </Button>
           </VStack>
         </Box>

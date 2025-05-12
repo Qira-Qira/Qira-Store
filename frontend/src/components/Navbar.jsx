@@ -2,9 +2,10 @@ import { Button, Container, Flex, HStack, Text, useColorMode } from "@chakra-ui/
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { BsPlusSquare   } from "react-icons/bs";
 import { IoMoon } from "react-icons/io5";
 import { LuSun } from "react-icons/lu";
+import { FaShop } from "react-icons/fa6";
+import { FaRegPlusSquare } from "react-icons/fa";
 
 const Navbar = () => {
 
@@ -35,7 +36,12 @@ const Navbar = () => {
         <HStack spacing={"4"} alignItems={"center"}>
           <Link to={"/create"}>
             <Button>
-              <BsPlusSquare   fontSize={20} />
+              <FaRegPlusSquare   fontSize={20} />
+            </Button>
+          </Link>
+          <Link to={"/"}>
+            <Button>
+              <FaShop   fontSize={20} />
             </Button>
           </Link>
 
