@@ -33,7 +33,7 @@ const Navbar = () => {
           <Link to={"/"}>Qira Store 🛒</Link>
         </Text>
 
-        <HStack spacing={"4"} alignItems={"center"}>
+        <HStack spacing={"4"} alignItems={"center"} mt={2}>
           <Link to={"/create"}>
             <Button>
               <FaRegPlusSquare   fontSize={20} />
